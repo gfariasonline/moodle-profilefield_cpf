@@ -2,6 +2,10 @@ CPF Profile Field
 ===
 This is a CPF field to user profiles into moodle.
 
+Compatibility
+---
+This plugin supports Moodle 4.5 and higher.
+
 The Cadastro de Pessoas Físicas (CPF) – Portuguese for Natural Persons Register – is a number attributed by the Brazilian revenue agency (Receita Federal – Federal Revenue) to both Brazilians and resident aliens who pay taxes or take part, directly or indirectly, in activities that provide revenue for any of the dozens of different types of taxes existing in Brazil.
 
 More about CPF: http://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas
