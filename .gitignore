@@ -1,0 +1,21 @@
+/vendor/
+/node_modules/
+*.log
+config.php
+
+# Configurações locais de ferramentas de desenvolvimento
+.claude
+CLAUDE.md
+.claudeignore
+.codex
+codex.md
+.gemini
+gemini.md
+.cursor
+.cursorignore
+.cursorcontext
+.continue
+.aider*
+.codeium
+.github/copilot*
+*.copilot
