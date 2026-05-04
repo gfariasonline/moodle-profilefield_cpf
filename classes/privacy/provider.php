@@ -15,18 +15,32 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version metadata for the profilefield_cpf plugin.
+ * Privacy API implementation for the profilefield_cpf plugin.
  *
  * @package   profilefield_cpf
  * @copyright 2014 onwards Willian Mano {@link http://willianmano.net}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+namespace profilefield_cpf\privacy;
 
-$plugin->version    = 2026050400;
-$plugin->requires   = 2024100700;  // Moodle 4.5.
-$plugin->supported  = [405, 502];
-$plugin->component  = 'profilefield_cpf';
-$plugin->maturity   = MATURITY_STABLE;
-$plugin->release    = '2.0.0';
+/**
+ * Privacy provider — CPF values are stored in the core user_info_data table,
+ * which is managed by the core user privacy subsystem. This plugin itself
+ * holds no personal data.
+ *
+ * @package   profilefield_cpf
+ * @copyright 2014 onwards Willian Mano {@link http://willianmano.net}
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class provider implements \core_privacy\local\metadata\null_provider {
+
+    /**
+     * Returns the language string key that explains why no data is stored.
+     *
+     * @return string
+     */
+    public static function get_reason(): string {
+        return 'privacy:metadata';
+    }
+}

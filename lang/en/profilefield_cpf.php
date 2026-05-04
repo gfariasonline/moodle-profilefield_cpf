@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -16,13 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cpf_text', language 'en'
+ * Strings for component 'profilefield_cpf', language 'en'.
  *
- * @package   cpf_text
- * @copyright 2014 onwards Willian Mano  {@link http://willianmano.net}
+ * @package   profilefield_cpf
+ * @copyright 2014 onwards Willian Mano {@link http://willianmano.net}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'CPF input';
-$string['invalidcpf'] = 'Invalid CPF';
-$string['cpfexists'] = 'CPF already exists';
+$string['cpfexists']       = 'CPF already exists';
+$string['invalidcpf']      = 'Invalid CPF';
+$string['pluginname']      = 'CPF input';
+$string['privacy:metadata'] = 'The CPF profile field plugin does not store any personal data itself; '
+                            . 'CPF values are stored by the core user profile subsystem.';
