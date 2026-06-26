@@ -3,6 +3,9 @@
 *.log
 config.php
 
+# Planejamento local (não vai para o GitHub)
+.planning/
+
 # Configurações locais de ferramentas de desenvolvimento
 .claude
 CLAUDE.md
