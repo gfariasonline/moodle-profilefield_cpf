@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>amd/src/cleave-esm.js</location>
+        <name>cleave.js</name>
+        <description>Formats input content while users type.</description>
+        <version>1.6.0</version>
+        <license>MIT</license>
+        <repository>https://github.com/nosir/cleave.js</repository>
+        <copyrights>
+            <copyright>nosir</copyright>
+        </copyrights>
+    </library>
+</libraries>

@@ -32,21 +32,22 @@
 class profile_field_cpf extends profile_field_base {
 
     /**
-     * Adds the CPF text element to the edit form with an inline input mask.
+     * Adds the CPF text element to the edit form with an AMD-loaded input mask.
      *
      * @param MoodleQuickForm $mform The form object.
      */
     public function edit_field_add($mform) {
-        $maskjs = "this.value=this.value.replace(/\\D/g,'').replace(/(\\d{3})(\\d)/,'$1.$2')"
-                . ".replace(/(\\d{3})(\\d)/,'$1.$2').replace(/(\\d{3})(\\d{1,2})$/,'$1-$2').slice(0,14);";
+        global $PAGE;
 
         $mform->addElement(
             'text',
             $this->inputname,
             format_string($this->field->name),
-            'maxlength="14" size="14" id="' . $this->inputname . '" oninput="' . $maskjs . '"'
+            'maxlength="14" size="14"'
         );
         $mform->setType($this->inputname, PARAM_TEXT);
+
+        $PAGE->requires->js_call_amd('profilefield_cpf/cpf_mask', 'init', [$this->inputname]);
     }
 
     /**
