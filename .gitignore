@@ -8,6 +8,8 @@ config.php
 
 # Configurações locais de ferramentas de desenvolvimento
 .claude
+.codegraph
+.mcp.json
 CLAUDE.md
 .claudeignore
 .codex
